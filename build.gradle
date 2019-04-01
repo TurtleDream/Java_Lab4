@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.turtledream'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.vertx:vertx-service-discovery:3.6.3'
+    compile 'io.vertx:vertx-hazelcast:3.6.3'
+    compile 'io.vertx:vertx-web:3.6.3'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
